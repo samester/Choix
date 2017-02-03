@@ -16,16 +16,7 @@ public class ListeChoix extends ArrayList<UnChoix> implements Parcelable {
 
     }
 
-    /*
-    public String toString(){
-        String fin = "";
-        for(UnChoix uc : this) {
-            fin += uc.getNom() + " " + Integer.toString(uc.getPourcen()) + "\n";
-        }
 
-        return fin;
-    }
-    */
 
     protected ListeChoix(Parcel in) {
         this.getFromParcel(in);

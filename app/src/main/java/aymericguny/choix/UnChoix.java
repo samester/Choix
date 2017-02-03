@@ -27,12 +27,27 @@ public class UnChoix implements Parcelable {
         pourcen = 0;
     }
 
+    public UnChoix(String _nom)
+    {
+        nom = _nom;
+        pourcen = 0;
+    }
+
+    public String toString(){
+        return this.getPourcen()==0? (this.getNom()): (this.getNom() +"("+ this.getPourcen()+")");
+    }
+
+
     public int getPourcen() {
         return pourcen;
     }
 
     public void setPourcen(int pourcen) {
         this.pourcen = pourcen;
+    }
+
+    public void setPourcenPP() {
+        this.pourcen++;
     }
 
 
