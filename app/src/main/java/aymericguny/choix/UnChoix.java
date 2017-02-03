@@ -33,6 +33,7 @@ public class UnChoix implements Parcelable {
         pourcen = 0;
     }
 
+
     public String toString(){
         return this.getPourcen()==0? (this.getNom()): (this.getNom() +"("+ this.getPourcen()+")");
     }
