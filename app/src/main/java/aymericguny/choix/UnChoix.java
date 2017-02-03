@@ -38,6 +38,7 @@ public class UnChoix implements Parcelable {
     }
 
 
+
     public int getPourcen() {
         return pourcen;
     }
